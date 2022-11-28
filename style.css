@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, rgb(69, 69, 224), rgb(42, 110, 42), rgb(245, 245, 104));
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+ .instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+
+.instagram-phone{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        
+}
+
+.instagram-phone img{
+
+    height: 85rem;
+}
+
+.instagram-continue{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+
+  .group{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(231, 231, 91);
+    width: 100%;
+    padding: 1.3rem 0;
+    animation-name: group;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}      
+
+@keyframes group {
+    0% {background-color: rgb(231, 231, 91);}
+    55% {background-color: rgb(59, 134, 49);}
+    100% {background-color: rgb(50, 100, 129);}
+        
+}
+
+
+
+   .instagram-logo{
+
+    height: 3rem;
+    
+}
+
+   .profile-photo img{
+
+    height: 6rem;
+}
+
+   .group:nth-child(1){
+    min-height: 19rem;
+}
+
+   .profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(245, 245, 245);
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.instagram-login{
+    background-color: rgba(31, 29, 29, 0.452);
+    color: rgb(253, 236, 236);
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+   
+.instagram-logout{
+
+    color: #fffbfb;
+    margin-top: 1rem;
+    font-weight: 200;
+
+}
+.not-account{
+    color: rgb(253, 252, 252);
+    font-weight: bold;
+}      
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app{
+
+    font-weight: bold;
+}
+
+.download{
+
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url('googleplay-button.png');
+}
+.app-download:nth-child(2) {
+    background-image: url('apple-button.png');
+   
+}
+
+
+/*media queries*/
+
+@media (max-width: 1024px) {
+    .instagram-wrapper{
+
+        width: 90%;
+    }
+
+
+}
+
+
+@media (max-width: 650px) {
+
+    body{
+        background-image: linear-gradient(-45deg, rgb(69, 69, 224), rgb(42, 110, 42), rgb(245, 245, 104));
+    }
+    .instagram-wrapper{
+        width: 90%;
+    }
+
+    .instagram-phone{
+        display: none;
+
+    }
+
+    .logo_fifaxinstagram{
+        display: none;
+    }
+
+    .instagram-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+    
+}
+
+
+
